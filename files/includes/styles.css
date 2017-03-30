@@ -1,0 +1,29 @@
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px dotted #a1a1a1;
+    padding: 5px;
+}
+
+th {
+   background: #e0e0e0;
+}
+
+.error {
+   color: #C10E0E;
+}
+
+.feedback {
+   color: #0E9709;
+}
+
+.nav-menu {
+   background-color: #efefef;
+   min-width: 300px;
+   display: inline-block;
+   padding: 10px;
+   border-radius: 10px;
+   margin-bottom: 10px;
+}
