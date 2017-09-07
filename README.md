@@ -10,7 +10,7 @@ I tried to make it as barebones and transparent as possible. In a nutshell, fv2d
 ## How do you set up fv2db?
 
 ### Web Server
-I can't go into all the details here, but a web server of some kind that can server up PHP would be helpful--Apache, for example. You want to enable SSL with a proper (e.g., using Let's Encrypt) certificate or a self-signed one. And you may also want to enable basic authentication with a .htpasswd file. You can see an example of that in [Using https / self-signed certificates and basic authentication with Munki](https://technology.siprep.org/using-https-self-signed-certificates-and-basic-authentication-with-munki/). The .htpasswd file should go inside the *client* folder alongside the *checkkey.php* file.
+I can't go into all the details here, but a web server of some kind that can serve up PHP would be helpful--Apache, for example. You want to enable SSL with a proper (e.g., using Let's Encrypt) certificate or a self-signed one. And you may also want to enable basic authentication with a .htpasswd file. You can see an example of that in [Using https / self-signed certificates and basic authentication with Munki](https://technology.siprep.org/using-https-self-signed-certificates-and-basic-authentication-with-munki/). The .htpasswd file should go inside the *client* folder alongside the *checkkey.php* file.
 
 ### Web Files
 The files in *files* should go on your web server. Make a copy of *config_sample.php* and rename it *config.php*. Then fill in all the appropriate fields (credentials for your MySQL database, Google developer information, etc.).
