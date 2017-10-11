@@ -24,7 +24,7 @@ if(isset($_GET['code'])) {
       $user_info = $gapi->GetUserProfileInfo($data['access_token']);
       
       // Get specifically the email address
-      $user_email = strtolower(trim($user_info[emails][0]["value"]));
+      $user_email = strtolower(trim($user_info["emails"][0]["value"]));
 
       // See if this email is in the list of authorized users
       require('includes/database_connect.php');
